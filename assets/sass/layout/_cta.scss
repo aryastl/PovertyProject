@@ -1,0 +1,29 @@
+/* CTA */
+
+	#cta {
+		@include color(accent1);
+		background-attachment: fixed;
+		background-image: linear-gradient(transparentize(_palette(accent1,bg), 0.75), transparentize(_palette(accent1,bg), 0.75)), url("http:/i.imgur.com/6uN29HU.jpg");
+		background-size: cover;
+		position: relative;
+		text-align: center;
+		z-index: 1;
+
+		.inner {
+			position: relative;
+			z-index: 3;
+		}
+
+		@include breakpoint('<=medium') {
+			background-attachment: scroll;
+		}
+	}
+h2 {
+  opacity: 0.0px;
+}
+h3 {
+  opacity: 0.0px;
+}
+h4 {
+  opacity: 0.0px;
+}
